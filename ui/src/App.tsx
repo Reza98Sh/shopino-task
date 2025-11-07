@@ -23,13 +23,13 @@ function App() {
       <Card className="w-full max-w-2xl shadow-2xl">
         <Header />
         <CardContent className="space-y-6">
-          <ShortenerForm
+         {!shortUrl && <ShortenerForm
             longUrl={longUrl}
             setLongUrl={setLongUrl}
             loading={loading}
             error={error}
             handleSubmit={handleSubmit}
-          />
+          />}
           {shortUrl && (
             <ShortenedResult
               shortUrl={shortUrl}

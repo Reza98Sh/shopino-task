@@ -1,10 +1,12 @@
-
 import { useState } from 'react';
 
 export interface ShortenResponse {
   short_url: string;
   original_url: string;
 }
+
+// API configuration
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 export function useUrlShortener() {
   const [longUrl, setLongUrl] = useState<string>('');
@@ -19,10 +21,10 @@ export function useUrlShortener() {
     setLoading(true);
 
     try {
-      const response = await fetch('/api/long-url', {
+      const response = await fetch(`${API_BASE_URL}/api/long-url`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url: longUrl }),
+        body: JSON.stringify({ long_url: longUrl }),
       });
 
       if (!response.ok) {

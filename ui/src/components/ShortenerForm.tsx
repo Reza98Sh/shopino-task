@@ -22,7 +22,7 @@ const ShortenerForm = ({
   <form onSubmit={handleSubmit} className="space-y-4">
     <div className="space-y-2">
       <Label dir='rtl'  htmlFor="long-url" className="text-sm font-medium">
-        لینک خود را وارد کنید
+        لینک خود را وارد کنید:
       </Label>
       <Input
         id="long-url"

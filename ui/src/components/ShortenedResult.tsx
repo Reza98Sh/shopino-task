@@ -55,14 +55,14 @@ const ShortenedResult = ({ shortUrl, handleReset }: ShortenedResultProps) => {
           variant="outline"
           className="flex-1"
           onClick={() => window.open(shortUrl, "_blank")}>
-          Open Link
+          بازکردن لینک
         </Button>
         <Button
           type="button"
           variant="outline"
           className="flex-1"
           onClick={handleReset}>
-          Shorten Another
+          لینک چدید
         </Button>
       </div>
     </div>

@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     db_port: int = Field(5432, env="DB_PORT")
     db_name: str = Field(..., env="DB_NAME")
 
-    # additional pool settings if you like
+    # additional pool settings 
     pool_pre_ping: bool = True
     pool_size: int = 10
     max_overflow: int = 20
