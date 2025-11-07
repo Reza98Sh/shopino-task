@@ -1,56 +1,63 @@
-## **Technologies Used**
+## 🖼️ Screenshots
 
-### **Backend (API)**
+![Application Screenshot 1](Screenshot01.png)
+*Main application interface*
 
-* **Framework:** FastAPI (Python)
-* **Database:** PostgreSQL
-* **ORM:** SQLAlchemy
+![Application Screenshot 2](Screenshot02.png)
+*Additional feature view*
 
-### **Frontend (UI)**
+## 🛠️ Tech Stack
 
-* **Library:** React
-* **Language:** TypeScript
-* **Styling:** Tailwind CSS / Shadcn
+### **Backend**
 
----
+- **Framework:** FastAPI (Python)
+- **Database:** PostgreSQL
+- **ORM:** SQLAlchemy
+- **API Documentation:** Auto-generated OpenAPI docs
 
-## **Getting Started**
+### **Frontend**
 
-### **1. Setup the Backend**
+- **Framework:** React + Vite
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS / Shadcn components
+- **Development:** Hot-reload enabled
 
-1. **Clone the repository:**
+## 🚀 Quick Start
 
-   ```bash
-   git clone [Your Repository URL]
-   cd [Your Backend Directory, e.g., backend]
-   ```
-2. **Create a virtual environment and install dependencies:**
+### **Backend Setup**
+
+1. **Create and activate virtual environment:**
 
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   # On Windows:
+   venv\Scripts\activate
+   ```
+2. **Install dependencies:**
+
+   ```bash
    pip install -r requirements.txt
    ```
-3. **Configure environment variables:**
-   Create a file named `.env` in the backend directory and add your database configuration:
+3. **Environment configuration:**
 
-   ```
-   # Example .env file content
-   DATABASE_URL="postgresql://user:password@host:port/dbname"
-   SECRET_KEY="your-fastapi-secret"
+   ```bash
+   cp .env.example .env
    ```
 
-4. **Start the server:**
+   Edit `.env` with your database credentials and other configuration.
+4. **Start the development server:**
 
    ```bash
    uvicorn app.main:app --reload
    ```
 
-   The API should now be running at `http://127.0.0.1:8000`.
+The API will be available at `http://127.0.0.1:8000`
 
-### **2. Setup the Frontend**
+### **Frontend Setup**
 
-1. **Navigate to the frontend directory:**
+1. **Navigate to frontend directory:**
 
    ```bash
    cd ui
@@ -58,11 +65,19 @@
 2. **Install dependencies:**
 
    ```bash
-   npm install  # or yarn install
+   npm install
    ```
-3. **Start the React development server:**
+3. **Start development server:**
 
    ```bash
-   npm start  # or yarn start
+   npm run dev
    ```
-   The React application should open in your browser at `http://localhost:3000`.
+
+The React application will open at `http://localhost:3000`
+
+## 📚 API Documentation
+
+Once the backend is running, access the interactive API documentation:
+
+- **Swagger UI:** `http://127.0.0.1:8000/docs`
+- **ReDoc:** `http://127.0.0.1:8000/redoc`
