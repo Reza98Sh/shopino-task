@@ -23,10 +23,9 @@
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS / Shadcn components
 
-
 ## ⏱️ Development Time
 
-> **Total Time Spent:** ~13 hours  
+> **Total Time Spent:** ~9 hours
 
 ## 🚀 Quick Start
 
