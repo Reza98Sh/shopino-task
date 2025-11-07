@@ -12,17 +12,16 @@
 
 ### **Backend**
 
-- **Framework:** FastAPI (Python)
+- **Library:** FastAPI (Python)
 - **Database:** PostgreSQL
 - **ORM:** SQLAlchemy
 - **API Documentation:** Auto-generated OpenAPI docs
 
 ### **Frontend**
 
-- **Framework:** React + Vite
+- **Library:** React + Vite
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS / Shadcn components
-- **Development:** Hot-reload enabled
 
 ## 🚀 Quick Start
 

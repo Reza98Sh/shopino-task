@@ -6,13 +6,24 @@ class Base62:
 
     ALPHABET = string.digits + string.ascii_letters  # Character set: 0-9a-zA-Z
     BASE = 62
+    
 
-    def __init__(self, fixed_length: int = 4):
+
+    def __init__(self, fixed_length: int = 4, offset:bool = True):
 
         # Precomputed lookup dictionary for faster decoding
         self._char_to_index = {char: idx for idx,
                                char in enumerate(self.ALPHABET)}
         self.fixed_length = fixed_length
+        
+        if offset:
+            self.offset = self.calculate_offset()
+        else:
+            self.offset = 0
+            
+    def calculate_offset(self):
+        """Calculate the offset based on the fixed length."""
+        return self.decode("Z"*(self.fixed_length-1))+1
 
     def encode(self, num: int) -> str:
         """Convert an integer into a Base-62 encoded string."""
@@ -21,6 +32,7 @@ class Base62:
             raise ValueError(
                 "Only non-negative and non-zero integers are supported.")
         else:
+            num += self.offset
             parts = []
             while num > 0:
                 num, remainder = divmod(num, self.BASE)
@@ -45,7 +57,7 @@ class Base62:
 if __name__ == "__main__":
     # Example usage
     base62 = Base62()
-    original_number = 123456
+    original_number = 1
     encoded = base62.encode(original_number)
     decoded = base62.decode(encoded)
 
