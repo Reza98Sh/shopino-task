@@ -1,0 +1,7 @@
+fastapi             # High-performance Python web framework for building modern RESTful APIs.
+psycopg2-binary     # PostgreSQL database adapter for Python; precompiled version of psycopg2 for easier setup.
+pydantic-settings   # Simplifies managing app configuration using Pydantic BaseSettings with environment variables.
+python-dotenv       # Loads environment variables from a .env file into Python’s environment.
+SQLAlchemy          # Popular Python ORM and SQL toolkit for defining and interacting with relational databases.
+uvicorn             # Lightning-fast ASGI server for running FastAPI and other async Python web apps.
+validators          # Lightweight library for validating various data types such as URLs, emails, and IPs.
