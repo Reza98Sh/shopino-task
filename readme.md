@@ -1,10 +1,12 @@
 ## 🖼️ Screenshots
 
-![Application Screenshot 1](Screenshot01.png)
-*Main application interface*
+<p align="center">
+  <img src="Screenshot01.png" alt="Application Screenshot 1" width="500"/>
+</p>
 
-![Application Screenshot 2](Screenshot02.png)
-*Additional feature view*
+<p align="center">
+  <img src="Screenshot02.png" alt="Application Screenshot 2" width="500"/>
+</p>
 
 ## 🛠️ Tech Stack
 
