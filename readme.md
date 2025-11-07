@@ -74,7 +74,7 @@ The API will be available at `http://127.0.0.1:8000`
    npm run dev
    ```
 
-The React application will open at `http://localhost:3000`
+The React application will open at `http://localhost:5173`
 
 ## 📚 API Documentation
 
