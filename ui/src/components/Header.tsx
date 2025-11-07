@@ -13,7 +13,7 @@ const Header = () => (
       سرویس کوتاه کننده لینک
     </CardTitle>
     <CardDescription className="text-base">
-      لینک های بلند را به لینک های کوتاه قابل به اشتراک گذاری تبدیل کنید.
+      لینک های بلند را به لینک های کوتاه قابل اشتراک گذاری تبدیل کنید.
     </CardDescription>
   </CardHeader>
 );
